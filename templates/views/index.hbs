@@ -9,15 +9,18 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body >
     <div class="main-content">
-        {{>header}}
+        {{!-- {{>header}}  --}}
+        {{!-- <img class="portrait" src="images/bg.jpg" alt="img"  align="center" style="width: 100%;" >   --}}
+        <p class="intro">May I know your Location!</p>
 
-        <p>Use this site to get your weather!</p>
-
-        <form>
-            <input placeholder="Location">
-            <button>Search</button>
+        <form method="POST">
+            <table><tr>
+            <td colspan="100px"><input placeholder="Location"> </td>
+            <td><button>Search</button></td>
+            </tr>
+            </table>
         </form>
 
         <p id="message-1"></p>
